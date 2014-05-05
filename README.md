@@ -4,7 +4,7 @@
 
 ## What's Allum?
 
-Allum is actually an authentication layer for gollum Precious::App.
+Allum is actually an authentication layer for [gollum](https://github.com/gollum/gollum) Precious::App.
 Gollum is a local wiki source, based on GIT repository.
 
 ## Features
@@ -15,11 +15,10 @@ Gollum is a local wiki source, based on GIT repository.
 ### Start
 
 1. In config.ru you can set some params:
-
-  **gollum_path** - path to wiki repository, defaults to *./wikidata*
-  **authorized_users** - users information file path, defaults to users.yml
-  **default_markup** - defaults to 'markdown'
-  **some** wiki_options - no description in gollum readme, but gets hash of options like: base_path, pages directory, js enable, and others
+  * gollum_path - path to wiki repository, defaults to *./wikidata*
+  * authorized_users - users information file path, defaults to *users.yml*
+  * default_markup - defaults to *markdown*
+  * wiki_options - no description in gollum readme, but gets hash of options like: base_path, pages directory, js enable, and others
 
 2. Run bundle:
 
@@ -30,7 +29,7 @@ $ bundle install
 3. Add users with:
 
 ```sh
-$ rake 'add_user[John Doe, some@email.com, secret, true]
+$ rake 'add_user[John Doe, some@email.com, secret, true]'
 ```
 
 4. Start the server with:
