@@ -21,21 +21,18 @@ Gollum is a local wiki source, based on GIT repository.
   * wiki_options - no description in gollum readme, but gets hash of options like: base_path, pages directory, js enable, and others
 
 2. Run bundle:
-
-```sh
-$ bundle install
-```
+    ```sh
+    $ bundle install
+    ```
 
 3. Add users with:
-
-```sh
-$ rake 'add_user[John Doe, some@email.com, secret, true]'
-```
+    ```sh
+    $ rake 'add_user[John Doe, some@email.com, secret, true]'
+    ```
 
 4. Start the server with:
-
-```sh
-$ ./serve.sh
-```
+    ```sh
+    $ ./serve.sh
+   ```
 
 5. Enjoy :)
